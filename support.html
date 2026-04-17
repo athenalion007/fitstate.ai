@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - FitState AI</title>
+    <style>
+        :root {
+            --primary: #1B4332;
+            --secondary: #2C5F4C;
+            --background: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-primary: #1D1D1F;
+            --text-secondary: #8E8E93;
+            --divider: #E5E5EA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            opacity: 0.9;
+        }
+        
+        .language-switch {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .language-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+        
+        .language-switch a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .content {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--divider);
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(27, 67, 50, 0.03);
+            border-radius: 8px;
+        }
+        
+        .faq-item h3 {
+            color: var(--text-primary);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .contact-info {
+            background: rgba(27, 67, 50, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <a href="support_en.html">English</a>
+        </div>
+        <h1>技术支持</h1>
+        <p>我们随时为您提供帮助</p>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <h2>常见问题</h2>
+                
+                <div class="faq-item">
+                    <h3>如何授权 HealthKit 访问权限？</h3>
+                    <p>首次使用 FitState AI 时，应用会请求 HealthKit 访问权限。您可以在弹出的授权界面中选择要分享的健康数据类型。您也可以随时在 iOS 设置 > 隐私与安全 > 健康 > FitState AI 中管理权限。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>为什么我的健康数据没有显示？</h3>
+                    <p>请确保：1) 已授权 HealthKit 访问权限；2) iPhone 健康应用中有数据；3) 已选择正确的数据类型。如果问题持续，请尝试重新授权或重启应用。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>状态评分是如何计算的？</h3>
+                    <p>FitState AI 使用 AI 算法分析您的多项健康指标，包括步数、心率、睡眠、活动能量等，综合计算得出 0-10 分的状态评分。评分越高表示身体状态越好。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>我的数据安全吗？</h3>
+                    <p>绝对安全。所有健康数据仅存储在您的设备本地，我们不会上传到任何服务器。数据使用 Apple 的标准加密机制保护。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>如何切换语言？</h3>
+                    <p>打开 FitState AI，进入"我的"页面，点击"语言"选项，选择"中文"或"English"即可切换。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>应用支持哪些 iOS 版本？</h3>
+                    <p>FitState AI 支持 iOS 16.0 及以上版本。为了获得最佳体验，建议使用最新版本的 iOS。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="contact-info">
+                    <h3>联系我们</h3>
+                    <p>如果您有其他问题或需要帮助，请通过以下方式联系我们：</p>
+                    <p>邮箱：<a href="mailto:support@fitstate.ai">support@fitstate.ai</a></p>
+                    <p>网站：<a href="https://fitstate.ai">https://fitstate.ai</a></p>
+                    <p>我们会在 24 小时内回复您的邮件。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 FitState AI. All rights reserved. | <a href="index.html">返回首页</a></p>
+    </footer>
+</body>
+</html>

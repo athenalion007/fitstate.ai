@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitState AI - AI Fitness and Recovery Coach</title>
+    <style>
+        :root {
+            --primary: #1B4332;
+            --secondary: #2C5F4C;
+            --background: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-primary: #1D1D1F;
+            --text-secondary: #8E8E93;
+            --divider: #E5E5EA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .language-switch {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .language-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+        
+        .language-switch a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .privacy-highlight {
+            background: linear-gradient(135deg, rgba(27, 67, 50, 0.05) 0%, rgba(44, 95, 76, 0.05) 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .privacy-highlight h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .privacy-highlight p {
+            color: var(--text-secondary);
+        }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--divider);
+        }
+        
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.75rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <a href="index.html">中文</a>
+        </div>
+        <h1>FitState AI</h1>
+        <p>AI Fitness and Recovery Coach</p>
+        <a href="#" class="cta-button">Coming Soon to App Store</a>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>HealthKit Data Sync</h3>
+                    <p>Automatically sync iPhone health data including steps, heart rate, sleep, active energy, and more for comprehensive health monitoring.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Daily State Score</h3>
+                    <p>Based on AI algorithms analyzing multiple health indicators, calculate a 0-10 state score for intuitive understanding of your physical condition.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Smart Training Recommendations</h3>
+                    <p>Intelligently recommend suitable training plans based on your physical condition for scientific exercise intensity arrangement.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Guided Recovery Sessions</h3>
+                    <p>Provide guided courses including breathing exercises, meditation relaxation, and stretching recovery to help your body recover quickly.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Beautiful Data Visualization</h3>
+                    <p>Intuitively display health data trends and state changes, making data clear at a glance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Dark Mode Support</h3>
+                    <p>Fully supports iOS dark mode for more comfortable nighttime use.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="privacy-highlight">
+                <h3>Privacy First</h3>
+                <p>All health data is stored only on your device locally. We do not upload to any servers. Your data security is completely under your control.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="links">
+                <a href="privacy_en.html">Privacy Policy</a>
+                <a href="support_en.html">Support</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 FitState AI. All rights reserved.</p>
+        <p>The fitness suggestions provided by this app are for reference only and cannot replace professional medical diagnosis.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - FitState AI</title>
+    <style>
+        :root {
+            --primary: #1B4332;
+            --secondary: #2C5F4C;
+            --background: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-primary: #1D1D1F;
+            --text-secondary: #8E8E93;
+            --divider: #E5E5EA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            opacity: 0.9;
+        }
+        
+        .language-switch {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .language-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+        
+        .language-switch a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .content {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--divider);
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(27, 67, 50, 0.03);
+            border-radius: 8px;
+        }
+        
+        .faq-item h3 {
+            color: var(--text-primary);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .contact-info {
+            background: rgba(27, 67, 50, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <a href="support.html">中文</a>
+        </div>
+        <h1>Support</h1>
+        <p>We are here to help you</p>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>How do I authorize HealthKit access?</h3>
+                    <p>When you first use FitState AI, the app will request HealthKit access permissions. You can select which health data types to share in the authorization dialog. You can also manage permissions anytime in iOS Settings > Privacy & Security > Health > FitState AI.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Why is my health data not showing?</h3>
+                    <p>Please ensure: 1) HealthKit access is authorized; 2) Your iPhone Health app has data; 3) Correct data types are selected. If the issue persists, try re-authorizing or restarting the app.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How is the state score calculated?</h3>
+                    <p>FitState AI uses AI algorithms to analyze your health indicators, including steps, heart rate, sleep, active energy, etc., to calculate a comprehensive 0-10 state score. Higher scores indicate better physical condition.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is my data secure?</h3>
+                    <p>Absolutely. All health data is stored only on your device locally. We do not upload to any servers. Data is protected using Apple's standard encryption mechanisms.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do I switch languages?</h3>
+                    <p>Open FitState AI, go to the "Profile" page, tap "Language" option, and select "English" or "Chinese" to switch.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Which iOS versions are supported?</h3>
+                    <p>FitState AI supports iOS 16.0 and above. For the best experience, we recommend using the latest version of iOS.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>If you have other questions or need help, please contact us:</p>
+                    <p>Email: <a href="mailto:support@fitstate.ai">support@fitstate.ai</a></p>
+                    <p>Website: <a href="https://fitstate.ai">https://fitstate.ai</a></p>
+                    <p>We will respond to your email within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 FitState AI. All rights reserved. | <a href="index_en.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - FitState AI</title>
+    <style>
+        :root {
+            --primary: #1B4332;
+            --secondary: #2C5F4C;
+            --background: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-primary: #1D1D1F;
+            --text-secondary: #8E8E93;
+            --divider: #E5E5EA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            opacity: 0.9;
+        }
+        
+        .language-switch {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .language-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+        
+        .language-switch a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .content {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--divider);
+        }
+        
+        .section h3 {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .section ul {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background: rgba(27, 67, 50, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin: 1rem 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <a href="privacy_en.html">English</a>
+        </div>
+        <h1>隐私政策</h1>
+        <p>最后更新日期：2026年4月17日</p>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <h2>1. 介绍</h2>
+                <p>欢迎使用 FitState AI！本隐私政策解释了我们如何收集、使用、共享和保护您的个人信息。</p>
+                <p>FitState AI 是一款智能健身应用，通过分析您的健康数据提供个性化的训练和恢复建议。</p>
+            </div>
+            
+            <div class="section">
+                <h2>2. 我们收集的信息</h2>
+                <h3>2.1 HealthKit 数据</h3>
+                <p>在您明确授权后，我们会从 Apple HealthKit 收集以下健康数据：</p>
+                <ul>
+                    <li>步数</li>
+                    <li>步行/跑步距离</li>
+                    <li>活动能量消耗</li>
+                    <li>运动时间</li>
+                    <li>站立时间</li>
+                    <li>心率数据</li>
+                    <li>静息心率</li>
+                    <li>心率变异性 (HRV)</li>
+                    <li>睡眠分析数据</li>
+                    <li>最大摄氧量 (VO2 Max)</li>
+                    <li>体重和身高数据</li>
+                </ul>
+                
+                <h3>2.2 我们不收集的信息</h3>
+                <p>我们不收集以下类型的信息：</p>
+                <ul>
+                    <li>个人身份信息（姓名、邮箱、电话号码等）</li>
+                    <li>位置数据</li>
+                    <li>联系人信息</li>
+                    <li>相册或相机数据</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>3. 我们如何使用您的信息</h2>
+                <p>我们仅将收集的健康数据用于以下目的：</p>
+                <ul>
+                    <li><strong>计算每日状态评分</strong> - 分析您的健康数据以提供个性化的状态评分</li>
+                    <li><strong>训练推荐</strong> - 根据您的身体状况推荐合适的训练计划</li>
+                    <li><strong>恢复建议</strong> - 提供个性化的恢复课程建议</li>
+                    <li><strong>数据可视化</strong> - 在应用中展示您的健康数据图表</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>4. 数据存储和安全</h2>
+                <div class="highlight">
+                    <p><strong>重要说明：</strong>所有健康数据仅存储在您的设备本地，我们不会将您的健康数据上传到任何服务器。</p>
+                </div>
+                <h3>4.1 数据存储</h3>
+                <ul>
+                    <li>所有健康数据仅存储在您的设备本地</li>
+                    <li>我们不会将您的健康数据上传到任何服务器</li>
+                    <li>数据使用 Apple 的标准加密机制进行保护</li>
+                </ul>
+                
+                <h3>4.2 数据安全</h3>
+                <p>我们采用以下措施保护您的数据：</p>
+                <ul>
+                    <li>本地数据加密</li>
+                    <li>不与第三方共享数据</li>
+                    <li>不进行数据收集或分析</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>5. 您的权利</h2>
+                <p>根据适用的隐私法律，您拥有以下权利：</p>
+                <ul>
+                    <li><strong>访问权</strong> - 您可以随时在应用中查看我们收集的所有数据</li>
+                    <li><strong>删除权</strong> - 您可以通过撤销 HealthKit 授权来停止数据收集</li>
+                    <li><strong>控制权</strong> - 您可以随时在 iOS 设置中管理 HealthKit 权限</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>6. 数据共享</h2>
+                <div class="highlight">
+                    <p><strong>我们承诺：</strong>我们不会与任何第三方共享您的个人信息，包括第三方服务提供商、广告网络、数据分析公司。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>7. 儿童隐私</h2>
+                <p>FitState AI 不面向 13 岁以下的儿童。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+            </div>
+            
+            <div class="section">
+                <h2>8. 政策变更</h2>
+                <p>我们可能会不时更新本隐私政策。当我们更新时，我们会在应用中通知您，并更新本页面顶部的"最后更新日期"。</p>
+            </div>
+            
+            <div class="section">
+                <h2>9. 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+                <ul>
+                    <li>邮箱：support@fitstate.ai</li>
+                    <li>网站：https://fitstate.ai</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>10. HealthKit 特定说明</h2>
+                <p>FitState AI 使用 Apple HealthKit 来获取您的健康数据。我们承诺：</p>
+                <ul>
+                    <li>仅在您明确授权后才访问 HealthKit 数据</li>
+                    <li>不会将 HealthKit 数据用于广告或营销目的</li>
+                    <li>不会将 HealthKit 数据出售给任何第三方</li>
+                    <li>您可以随时在 iOS 设置中撤销授权</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 FitState AI. All rights reserved. | <a href="index.html">返回首页</a></p>
+    </footer>
+</body>
+</html>
